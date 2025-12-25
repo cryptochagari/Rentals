@@ -3,50 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rentals – Find Vacant Houses</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <title>Rentals – Find Vacant Houses in Kenya</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+    .header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://african.land/oc-content/plugins/blog/img/blog/1607.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .header p {
+      font-size: 1.3rem;
+      margin: 10px 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .card-img {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+    .card-content {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.8rem;
+      color: #1e4620;
+    }
+    .card p {
+      margin: 0;
+      color: #555;
+    }
+    .card i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #d32f2f;
+    }
+    .report {
+      background: #1e4620;
+      color: white;
+    }
+    .report h2, .report p {
+      color: white;
+    }
+    .report i {
+      color: #fff;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: white;
+      margin-top: 40px;
+    }
+    .footer img {
+      height: 30px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
 
   <header class="header">
-    <h1>Rentals</h1>
-    <p>Find vacant houses in your estate instantly</p>
+    <h1>Rentals Kenya</h1>
+    <p>Find vacant houses in your estate instantly – Bedsitters to 3-Bedrooms</p>
   </header>
 
   <main class="container">
 
     <a class="card" href="https://link-to-bedsitter-map" target="_blank">
-      <h2>Bedsitters</h2>
-      <p>Available bedsitters near you</p>
+      <div class="card-img" style="background-image: url('https://propscout.co.ke/storage/properties/files/flat-and-apartments/thumbnails/-spacious-bedsitter-to-let-in-lower-kabete-wffmc.jpg');"></div>
+      <div class="card-content">
+        <div>
+          <i class="fas fa-bed"></i>
+          <h2>Bedsitters</h2>
+          <p>Cozy and affordable bedsitters available near you</p>
+        </div>
+      </div>
     </a>
 
     <a class="card" href="https://link-to-1-bedroom-map" target="_blank">
-      <h2>1 Bedroom</h2>
-      <p>View all 1 bedroom houses</p>
+      <div class="card-img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/306555868.jpg?k=e5b3833d118eb328c65cc2af2144d12d6ed8a22e0f3f3c8e966c7694f1958781&o=');"></div>
+      <div class="card-content">
+        <div>
+          <i class="fas fa-home"></i>
+          <h2>1 Bedroom</h2>
+          <p>Spacious one-bedroom houses for rent</p>
+        </div>
+      </div>
     </a>
 
     <a class="card" href="https://link-to-2-bedroom-map" target="_blank">
-      <h2>2 Bedroom</h2>
-      <p>View all 2 bedroom houses</p>
+      <div class="card-img" style="background-image: url('https://propscout.co.ke/storage/properties/files/flat-and-apartments/thumbnails/-2-bedroom-apartment-for-rent-in-katani-syokimau-isvjh.jpg');"></div>
+      <div class="card-content">
+        <div>
+          <i class="fas fa-building"></i>
+          <h2>2 Bedroom</h2>
+          <p>Comfortable two-bedroom options across estates</p>
+        </div>
+      </div>
     </a>
 
     <a class="card" href="https://link-to-3-bedroom-map" target="_blank">
-      <h2>3 Bedroom</h2>
-      <p>View all 3 bedroom houses</p>
+      <div class="card-img" style="background-image: url('https://www.afrohouseplans.com/wp-content/uploads/2022/10/13049.jpg.webp');"></div>
+      <div class="card-content">
+        <div>
+          <i class="fas fa-house-user"></i>
+          <h2>3 Bedroom</h2>
+          <p>Family-sized three-bedroom houses and bungalows</p>
+        </div>
+      </div>
     </a>
 
     <a class="card report" href="https://link-to-your-google-form" target="_blank">
-      <h2>Report a Vacancy</h2>
-      <p>Caretakers & agents add vacant houses</p>
+      <div class="card-img" style="background-image: url('https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063941614408');"></div>
+      <div class="card-content">
+        <div>
+          <i class="fas fa-bullhorn"></i>
+          <h2>Report a Vacancy</h2>
+          <p>Caretakers & agents – add vacant houses here</p>
+        </div>
+      </div>
     </a>
 
   </main>
 
   <footer class="footer">
     <p>Payments to caretakers via M-Pesa after confirmation</p>
-    <p>Built for Kenya 🇰🇪</p>
+    <p>Built with ❤️ for Kenya</p>
+    <img src="https://media.istockphoto.com/id/801192700/vector/vector-national-flag-of-kenya.jpg?s=612x612&w=0&k=20&c=lQnrq6cESFqHnjE8q9oSPP_7-Io4S-kgntrtngOORUg=" alt="Kenyan Flag" />
   </footer>
 
 </body>
