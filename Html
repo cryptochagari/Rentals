@@ -1,103 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rentals – Vacant Houses</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 16px;
-    }
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .card {
-      background-color: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 15px 0;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      text-align: center;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    }
-    .card h2 {
-      margin: 0;
-      font-size: 22px;
-      color: #333;
-    }
-    .card p {
-      margin: 8px 0 0;
-      color: #555;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rentals – Find Vacant Houses</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
+  <header class="header">
     <h1>Rentals</h1>
     <p>Find vacant houses in your estate instantly</p>
   </header>
 
-  <main>
-    <div class="card" onclick="window.open('https://link-to-bedsitter-map', '_blank')">
+  <main class="container">
+
+    <a class="card" href="https://link-to-bedsitter-map" target="_blank">
       <h2>Bedsitters</h2>
-      <p>View all available bedsitters</p>
-    </div>
+      <p>Available bedsitters near you</p>
+    </a>
 
-    <div class="card" onclick="window.open('https://link-to-1-bedroom-map', '_blank')">
+    <a class="card" href="https://link-to-1-bedroom-map" target="_blank">
       <h2>1 Bedroom</h2>
-      <p>View all available 1 bedroom houses</p>
-    </div>
+      <p>View all 1 bedroom houses</p>
+    </a>
 
-    <div class="card" onclick="window.open('https://link-to-2-bedroom-map', '_blank')">
+    <a class="card" href="https://link-to-2-bedroom-map" target="_blank">
       <h2>2 Bedroom</h2>
-      <p>View all available 2 bedroom houses</p>
-    </div>
+      <p>View all 2 bedroom houses</p>
+    </a>
 
-    <div class="card" onclick="window.open('https://link-to-3-bedroom-map', '_blank')">
+    <a class="card" href="https://link-to-3-bedroom-map" target="_blank">
       <h2>3 Bedroom</h2>
-      <p>View all available 3 bedroom houses</p>
-    </div>
+      <p>View all 3 bedroom houses</p>
+    </a>
 
-    <div class="card" style="background-color:#FFD700;" onclick="window.open('https://link-to-your-google-form', '_blank')">
+    <a class="card report" href="https://link-to-your-google-form" target="_blank">
       <h2>Report a Vacancy</h2>
-      <p>Caretakers & agents: submit new listings</p>
-    </div>
+      <p>Caretakers & agents add vacant houses</p>
+    </a>
+
   </main>
 
-  <footer>
-    Caretakers are paid via M-Pesa after confirmation.<br>
-    Rentals — simple, local, and fast.
+  <footer class="footer">
+    <p>Payments to caretakers via M-Pesa after confirmation</p>
+    <p>Built for Kenya 🇰🇪</p>
   </footer>
 
 </body>
